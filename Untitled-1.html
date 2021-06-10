@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>Tổng: <span id="tongca"></span></div>
+    <div>Điều trị: <span id="dieutri"></span></div>
+    <div>Hồi phục: <span id="hoiphuc"></span></div>
+    <div>Die: <span id="teo"></span></div>
+    <div>Cập nhật: <span id="capnhat"></span></div>
+    <div id="amlich-calendar">
+        <table class="amlich" border="0" cellpadding="0" cellspacing="0" width="200px">
+            <tbody>
+                <tr>
+                    <td colspan="7">
+                        <table class="calendar" border="0" cellpadding="4" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="calendar-month">Tháng 6 Năm 2021</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="calendar-day">
+                                        <span class="day-num">1</span><br>
+                                        <span class="day-tuan">Thứ Ba</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="50%" class="calendar-b-left" valign="top">
+                                        <span class="lunar-month-name">Tháng Bốn</span><br>
+                                        <span class="lunar-day-num">21</span><br>
+                                        <span class="lunar-year-name"><strong>Tân Sửu</strong></span>
+                                    </td>
+                                    <td width="50%" class="calendar-b-right" valign="top">
+                                        <span>Ngày <strong>Canh Thìn</strong></span><br>
+                                        <span>Tháng <strong>Quý Tỵ</strong></span><br>
+                                        <span>Giờ đầu <strong>Bính Tý</strong></span><br>
+                                        <span>Tiết <strong>Tiểu mãn</strong></span><br>
+                                        <span>PL: <strong>2565</strong></span>
+                                    </td>
+                                </tr>
+                                <tr class="calendar-holiday">
+                                    <td colspan="2">Ngày Quốc tế Thiếu nhi (1/6 DL)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="calendar-hoangdao">Giờ hoàng đạo: Dần (3-5), Thìn (7-9), Tỵ
+                                        (9-11),
+                                        Thân (15-17), Dậu (17-19), Hợi (21-23)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="navi-l"><a class="prev-year" data-yy="2020" data-mm="6" href="#">‹‹</a>
+                        &nbsp;<a class="prev-month" data-yy="2021" data-mm="5" href="#">&nbsp;‹&nbsp;</a></td>
+                    <td colspan="3" class="tenthang">6/2021</td>
+                    <td colspan="2" class="navi-r"><a class="next-month" data-yy="2021" data-mm="7"
+                            href="#">&nbsp;›&nbsp;</a> &nbsp;<a class="next-year" data-yy="2022" data-mm="6"
+                            href="#">››</a></td>
+                </tr>
+
+                <tr>
+                    <td class="ngaytuan">CN</td>
+                    <td class="ngaytuan">T2</td>
+                    <td class="ngaytuan">T3</td>
+                    <td class="ngaytuan">T4</td>
+                    <td class="ngaytuan">T5</td>
+                    <td class="ngaytuan">T6</td>
+                    <td class="ngaytuan">T7</td>
+                </tr>
+                <tr>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="leduong" title="Ngày Quốc tế Thiếu nhi (1/6 DL)"
+                        data-args="21,4,2021,0,2459367,1,6,2021">
+                        <div class="t2t6">1</div>
+                        <div class="am">21/4</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Tân Tỵ, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="22,4,2021,0,2459368,2,6,2021">
+                        <div class="t2t6">2</div>
+                        <div class="am">22</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="23,4,2021,0,2459369,3,6,2021">
+                        <div class="t2t6">3</div>
+                        <div class="am">23</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Quý Mùi, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="24,4,2021,0,2459370,4,6,2021">
+                        <div class="t2t6">4</div>
+                        <div class="am">24</div>
+                    </td>
+                    <td class="leduong" title="Ngày Bác Hồ ra đi tìm đường cứu nước (5/6 DL)"
+                        data-args="25,4,2021,0,2459371,5,6,2021">
+                        <div class="t7">5</div>
+                        <div class="am">25</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ngaythang" title="Ngày Ất Dậu, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="26,4,2021,0,2459372,6,6,2021">
+                        <div class="cn">6</div>
+                        <div class="am">26</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Bính Tuất, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="27,4,2021,0,2459373,7,6,2021">
+                        <div class="t2t6">7</div>
+                        <div class="am">27</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Đinh Hợi, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="28,4,2021,0,2459374,8,6,2021">
+                        <div class="t2t6">8</div>
+                        <div class="am">28</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Mậu Tý, tháng Quý Tỵ, năm Tân Sửu"
+                        data-args="29,4,2021,0,2459375,9,6,2021">
+                        <div class="t2t6">9</div>
+                        <div class="am">29</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="1,5,2021,0,2459376,10,6,2021">
+                        <div class="t2t6">10</div>
+                        <div class="am">1/5</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Canh Dần, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="2,5,2021,0,2459377,11,6,2021">
+                        <div class="t2t6">11</div>
+                        <div class="am">2</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Tân Mẹo, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="3,5,2021,0,2459378,12,6,2021">
+                        <div class="t7">12</div>
+                        <div class="am">3</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="4,5,2021,0,2459379,13,6,2021">
+                        <div class="cn">13</div>
+                        <div class="am">4</div>
+                    </td>
+                    <td class="leam" title="Tết Đoan ngọ (5/5 ÂL)" data-args="5,5,2021,0,2459380,14,6,2021">
+                        <div class="t2t6">14</div>
+                        <div class="am">5</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="6,5,2021,0,2459381,15,6,2021">
+                        <div class="t2t6">15</div>
+                        <div class="am">6</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Ất Mùi, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="7,5,2021,0,2459382,16,6,2021">
+                        <div class="t2t6">16</div>
+                        <div class="am">7</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Bính Thân, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="8,5,2021,0,2459383,17,6,2021">
+                        <div class="t2t6">17</div>
+                        <div class="am">8</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Đinh Dậu, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="9,5,2021,0,2459384,18,6,2021">
+                        <div class="t2t6">18</div>
+                        <div class="am">9</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Mậu Tuất, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="10,5,2021,0,2459385,19,6,2021">
+                        <div class="t7">19</div>
+                        <div class="am">10</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="11,5,2021,0,2459386,20,6,2021">
+                        <div class="cn">20</div>
+                        <div class="am">11</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Canh Tý, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="12,5,2021,0,2459387,21,6,2021">
+                        <div class="t2t6">21</div>
+                        <div class="am">12</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Tân Sửu, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="13,5,2021,0,2459388,22,6,2021">
+                        <div class="t2t6">22</div>
+                        <div class="am">13</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Nhâm Dần, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="14,5,2021,0,2459389,23,6,2021">
+                        <div class="t2t6">23</div>
+                        <div class="am">14</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Quý Mẹo, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="15,5,2021,0,2459390,24,6,2021">
+                        <div class="t2t6">24</div>
+                        <div class="am">15</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Giáp Thìn, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="16,5,2021,0,2459391,25,6,2021">
+                        <div class="t2t6">25</div>
+                        <div class="am">16</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Ất Tỵ, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="17,5,2021,0,2459392,26,6,2021">
+                        <div class="t7">26</div>
+                        <div class="am">17</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ngaythang" title="Ngày Bính Ngọ, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="18,5,2021,0,2459393,27,6,2021">
+                        <div class="cn">27</div>
+                        <div class="am">18</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Đinh Mùi, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="19,5,2021,0,2459394,28,6,2021">
+                        <div class="t2t6">28</div>
+                        <div class="am">19</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Mậu Thân, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="20,5,2021,0,2459395,29,6,2021">
+                        <div class="t2t6">29</div>
+                        <div class="am">20</div>
+                    </td>
+                    <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Giáp Ngọ, năm Tân Sửu"
+                        data-args="21,5,2021,0,2459396,30,6,2021">
+                        <div class="t2t6">30</div>
+                        <div class="am">21</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                    <td class="ngaythang">
+                        <div class="cn">&nbsp;</div>
+                        <div class="am">&nbsp;</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "/script.js">
+</script>
+<script>
+    $(document).load("https://api.apify.com/v2/key-value-stores/EaCBL1JNntjR3EakU/records/LATEST?disableRedirect=true",
+        function (response, status, xhr) {
+            if (status == "success") {
+                var rx = JSON.parse(response);
+                $('#tongca').html(rx.infected);
+                $('#dieutri').html(rx.treated);
+                $('#hoiphuc').html(rx.recovered);
+                $('#teo').html(rx.deceased);
+                $('#capnhat').html(rx.lastUpdatedAtApify);
+            } else if (status == "error") {
+                console.log("Lỗi");
+            }
+        })
+</script>
+
+</html>
